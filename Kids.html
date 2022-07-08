@@ -1,0 +1,776 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.snipcart.com/themes/v3.2.0/default/snipcart.css" />
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link href="http://www.w3schools.com/lib/w3.css" rel="stylesheet"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <link rel="shortcut icon" type = "image/png" href="images/sasi.jpg">
+    <title>Kids</title>
+
+
+
+    <style>
+      .dropbtn {
+        background-color: rgba(17,24,39);
+        color: rgb(160,160,160);
+        padding: 16px;
+        font-size: 14px;
+        border: none;
+        
+      
+      }
+  
+      .dropdown {
+        position: relative;
+        display: inline-block;
+      }
+  
+      .dropdown-content {
+        display: none;
+        font-size: 12px;
+        text-align: center;
+        position: absolute;
+        background-color: rgba(17,24,39);
+        min-width: 150px;
+        box-shadow: 0px 8px 16px 0px rgba(19, 41, 129, 0.2);
+        z-index: 1;
+      }
+  
+      .dropdown-content a {
+        color: white;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+      }
+  
+      .s{
+        font-size: 24px;
+        color: white;
+        background-color:rgba(17,24,39);
+        text-align: center;
+        font-family: 'Times';
+      }
+
+
+
+        .mySlides{
+      
+      display: block;
+      margin-right: auto;
+      margin-left: auto;
+      height: 400px;
+      width: fit-content;
+      background-color:rgba(17,24,39);
+    }
+
+
+
+
+      .dropdown-content a:hover {background-color: rgba(107, 114, 128, var(--tw-bg-opacity));}
+  
+      .dropdown:hover .dropdown-content {display: block;}
+  
+      .dropdown:hover .dropbtn {background-color: rgba(55, 65, 81, var(--tw-bg-opacity));}
+
+
+
+
+                  
+
+            .previous {
+                display: inline-block;
+                position: absolute;
+                left: 42.5%;
+                padding: 8px 16px;
+                background-color: grey;
+                color: black;    
+            }
+
+      
+          .next {
+          
+            display: inline-block;
+            position: absolute;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            padding: 8px 16px;
+            background-color: rgb(119, 119, 119);
+            color:black;
+       
+          }
+
+          .previous:hover{
+            background-color: white;
+          }
+          .next:hover{
+            background-color:rgb(255, 255, 255);
+          }
+
+          .round {
+        
+          
+            border-radius: 50%;
+          }
+
+
+          .picture{
+                    position: relative;
+                    display: block;
+                    margin-left: auto;
+                    margin-right: auto;
+                    height: 400px;
+                    width: 400px;
+                    object-fit: cover;
+                    object-position: center center;
+                    
+                  }
+
+
+                  .lilbutton{
+                    background-color: white;
+                    border-radius: 50%;
+                    opacity: 70%;
+
+                  }
+
+
+
+    </style>
+  
+
+  
+  
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+  <script>
+      $(document).ready(function(){
+          // Show hide popover
+          $(".dropdown").click(function(){
+              $(this).find(".dropdown-content").slideToggle("fast");
+          });
+      });
+      $(document).on("click", function(event){
+          var $trigger = $(".dropdown");
+          if($trigger !== event.target && !$trigger.has(event.target).length){
+              $(".dropdown-content").slideUp("fast");
+          }            
+      });
+
+  </script>
+  
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+</head>
+<body>
+
+    <header class="text-gray-400 bg-gray-900 body-font">
+        <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
+          <a class="flex title-font font-medium items-center text-white mb-4 md:mb-0">
+            <img src="images/sasi.jpg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-16 h-16 text-white p-2 bg-black-500 rounded-full" viewBox="0 0 24 24">
+          </svg>
+            <span class="ml-3 text-xl">Designer</span>
+          </a>
+
+
+          <nav class="md:ml-auto md:mr-auto flex flex-wrap items-center text-base justify-center">
+            <a href="index.html" class="mr-5 hover:text-white">Home</a>
+
+
+            <div class="dropdown"> 
+              <a href="Men.html">
+              <button class="dropbtn">Men
+              </button>
+              </a>
+              <div class="dropdown-content">
+                <a href="Men.html">Shop All</a>
+                <a href="#">T-Shirts</a>
+                <a href="#">Denim</a>
+                <a href="#">Shorts</a>
+                <a href="#">Sweatshirt</a>
+                <a href="#">Hoodies</a>
+                <a href="#">Accessories</a>
+              </div>
+            </div>
+      
+            <div class="dropdown"> 
+              <a href="Women.html">
+              <button class="dropbtn">Women
+              </button>
+              </a>
+              <div class="dropdown-content">
+                <a href="Women.html">Shop All</a>
+                <a href="#">Dresses</a>
+                <a href="#">Denim</a>
+                <a href="#">Tees & Tanks</a>
+                <a href="#">Sweatshirts</a>
+                <a href="#">Hoodies</a>
+                <a href="#">Accessories</a>
+                
+      
+              </div>
+            </div>
+            
+      
+            <div class="dropdown"> 
+              <a href="Kids.html">
+              <button class="dropbtn">Kids
+              </button>
+              </a>
+              <div class="dropdown-content">
+                <a href="Kids.html">Shop All</a>
+                <a href="#">T-Shirts</a>
+                <a href="#">Jackets</a>
+              </div>
+            </div>
+        
+
+          </nav>
+        
+          <a href="cart.html">
+          <button class="inline-flex items-center bg-gray-800 border-0 py-1 px-3 focus:outline-none hover:bg-gray-700 rounded text-base mt-4 md:mt-0 snipcart-checkout">Bag
+          
+
+            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-1" viewBox="0 0 24 24">
+              <path d="M5 12h14M12 5l7 7-7 7"></path>
+            </svg>
+          </button>
+          </a>
+          </a>
+        </div>
+      </header>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      
+      
+      <p class="s">Kids</p>
+      
+        <section class="text-gray-400 bg-gray-900 body-font overflow-hidden">
+          <div class="container px-5 py-24 mx-auto">
+          <div class="lg:w-4/5 mx-auto flex flex-wrap">
+        
+          <img class="mySlides lg:w-1/2 w-full lg:h-auto h-64 object-cover object-center rounded" src="images/DenimCollection1.jpg">
+          <img class="mySlides lg:w-1/2 w-full lg:h-auto h-64 object-cover object-center rounded" src="images/DenimCollection2.jpg">
+          <img class="mySlides lg:w-1/2 w-full lg:h-auto h-64 object-cover object-center rounded" src="images/DenimCollection3.jpg">
+          <div class="centered"></div>
+
+
+
+        
+          <script>
+            var slideIndex = 0;
+            carousel();
+
+            function carousel() {
+              var i;
+              var x = document.getElementsByClassName("mySlides");
+              for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none"; 
+              }
+              slideIndex++;
+              if (slideIndex > x.length) {slideIndex = 1} 
+              x[slideIndex-1].style.display = "block"; 
+              setTimeout(carousel, 4000); // Change image every 2 seconds
+            }
+          </script>
+
+
+        </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      
+       <!--Section1-->
+       <section class="text-gray-400 bg-gray-900 body-font overflow-hidden">
+        <div class="container px-5 py-24 mx-auto">
+          <div class="block relative lg:w-4/5 mx-auto flex flex-wrap"> 
+            
+            <div class="w3-content w3-display-container slider" id="div1">
+              <img class="picture slides" src="images/Tshirt3.jpg">
+              <img class="picture slides" src="images/Tshirt5.jpg">
+             
+             
+            
+              <a class="w3-button w3-display-left lilbutton" onclick="plusDivs(this, -1)">&#10094;</a>
+              <a class="w3-button w3-display-right lilbutton" onclick="plusDivs(this, 1)">&#10095;</a>
+            </div>  
+          </div>
+
+     
+              <div class="lg:w-3/5 mx-auto flex-wrap"> 
+              <h2 class="text-sm title-font text-gray-500 tracking-widest">Designer</h2>
+              <h1 class="text-white text-3xl title-font font-medium mb-1">The Catcher in the Rye</h1>
+                <div class="flex mb-4">
+             
+                
+                </div>
+              <p class="leading-relaxed"></p> <!--ADD ITEM DESCRIPTION HERE-->
+              <div class="flex mt-6 items-center pb-5 border-b-2 border-gray-800 mb-5">
+                <div class="flex">
+                  <span class="mr-3">Available in</span>
+                  
+                  <button class="border-2 border-gray-800 ml-1 bg-black rounded-full w-6 h-6 focus:outline-none"></button>
+                  <button class="border-2 border-gray-800 ml-1 bg-white rounded-full w-6 h-6 focus:outline-none"></button>
+                  <button class="border-2 border-gray-800 ml-1 rounded-full w-6 h-6 focus:outline-none" style="background-color:darkblue";></button>
+                </div>
+                <div class="flex ml-6 items-center">
+                  <div class="relative">
+                  
+                  </div>
+                </div>
+              </div>
+              <div class="flex">
+                <span class="title-font font-medium text-2xl text-white">$28</span>
+                
+                <button class= "flex ml-auto text-white bg-blue-500 border-0 py-2 px-6 focus:outline-none hover:bg-blue-600 rounded buy-button snipcart-add-item" 
+
+                data-item-id="1"
+                data-item-price="28"
+                data-item-url="/"
+                data-item-name="Hoodie"
+                data-item-image="/"
+                data-item-description="hehe"
+                data-item-custom1-name="Frame color"
+                data-item-custom1-options="S|M|L|XL"
+                data-item-custom2-name="Colors"
+                data-item-custom2-options="Black|White|Blue|Red|Green|Grey"
+
+                >Buy Now</button>
+                
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+       <!--Section2-->
+       <section class="text-gray-400 bg-gray-900 body-font overflow-hidden">
+        <div class="container px-5 py-24 mx-auto">
+          <div class="block relative lg:w-4/5 mx-auto flex flex-wrap"> 
+            
+            <div class="w3-content w3-display-container slider" id="div2">
+              <img class="picture slides" src="images/Tshirt3.jpg">
+              <img class="picture slides" src="images/Tshirt5.jpg">
+             
+             
+            
+              <a class="w3-button w3-display-left lilbutton" onclick="plusDivs(this, -1)">&#10094;</a>
+              <a class="w3-button w3-display-right lilbutton" onclick="plusDivs(this, 1)">&#10095;</a>
+            </div>  
+          </div>
+
+     
+              <div class="lg:w-3/5 mx-auto flex-wrap"> 
+              <h2 class="text-sm title-font text-gray-500 tracking-widest">Designer</h2>
+              <h1 class="text-white text-3xl title-font font-medium mb-1">The Catcher in the Rye</h1>
+                <div class="flex mb-4">
+             
+                
+                </div>
+              <p class="leading-relaxed"></p> <!--ADD ITEM DESCRIPTION HERE-->
+              <div class="flex mt-6 items-center pb-5 border-b-2 border-gray-800 mb-5">
+                <div class="flex">
+                  <span class="mr-3">Available in</span>
+                  
+                  <button class="border-2 border-gray-800 ml-1 bg-black rounded-full w-6 h-6 focus:outline-none"></button>
+                  <button class="border-2 border-gray-800 ml-1 bg-white rounded-full w-6 h-6 focus:outline-none"></button>
+                  <button class="border-2 border-gray-800 ml-1 rounded-full w-6 h-6 focus:outline-none" style="background-color:darkblue";></button>
+                </div>
+                <div class="flex ml-6 items-center">
+                  <div class="relative">
+                  
+                  </div>
+                </div>
+              </div>
+              <div class="flex">
+                <span class="title-font font-medium text-2xl text-white">$28</span>
+                
+                <button class= "flex ml-auto text-white bg-blue-500 border-0 py-2 px-6 focus:outline-none hover:bg-blue-600 rounded buy-button snipcart-add-item" 
+
+                data-item-id="1"
+                data-item-price="28"
+                data-item-url="/"
+                data-item-name="Hoodie"
+                data-item-image="/"
+                data-item-description="hehe"
+                data-item-custom1-name="Frame color"
+                data-item-custom1-options="S|M|L|XL"
+                data-item-custom2-name="Colors"
+                data-item-custom2-options="Black|White|Blue|Red|Green|Grey"
+
+                >Buy Now</button>
+                
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+       <!--Section3-->
+       <section class="text-gray-400 bg-gray-900 body-font overflow-hidden">
+        <div class="container px-5 py-24 mx-auto">
+          <div class="block relative lg:w-4/5 mx-auto flex flex-wrap"> 
+            
+            <div class="w3-content w3-display-container slider" id="div3">
+              <img class="picture slides" src="images/Tshirt3.jpg">
+              <img class="picture slides" src="images/Tshirt5.jpg">
+             
+             
+            
+              <a class="w3-button w3-display-left lilbutton" onclick="plusDivs(this, -1)">&#10094;</a>
+              <a class="w3-button w3-display-right lilbutton" onclick="plusDivs(this, 1)">&#10095;</a>
+            </div>  
+          </div>
+
+     
+              <div class="lg:w-3/5 mx-auto flex-wrap"> 
+              <h2 class="text-sm title-font text-gray-500 tracking-widest">Designer</h2>
+              <h1 class="text-white text-3xl title-font font-medium mb-1">The Catcher in the Rye</h1>
+                <div class="flex mb-4">
+             
+                
+                </div>
+              <p class="leading-relaxed"></p> <!--ADD ITEM DESCRIPTION HERE-->
+              <div class="flex mt-6 items-center pb-5 border-b-2 border-gray-800 mb-5">
+                <div class="flex">
+                  <span class="mr-3">Available in</span>
+                  
+                  <button class="border-2 border-gray-800 ml-1 bg-black rounded-full w-6 h-6 focus:outline-none"></button>
+                  <button class="border-2 border-gray-800 ml-1 bg-white rounded-full w-6 h-6 focus:outline-none"></button>
+                  <button class="border-2 border-gray-800 ml-1 rounded-full w-6 h-6 focus:outline-none" style="background-color:darkblue";></button>
+                </div>
+                <div class="flex ml-6 items-center">
+                  <div class="relative">
+                  
+                  </div>
+                </div>
+              </div>
+              <div class="flex">
+                <span class="title-font font-medium text-2xl text-white">$28</span>
+                
+                <button class= "flex ml-auto text-white bg-blue-500 border-0 py-2 px-6 focus:outline-none hover:bg-blue-600 rounded buy-button snipcart-add-item" 
+
+                data-item-id="1"
+                data-item-price="28"
+                data-item-url="/"
+                data-item-name="Hoodie"
+                data-item-image="/"
+                data-item-description="hehe"
+                data-item-custom1-name="Frame color"
+                data-item-custom1-options="S|M|L|XL"
+                data-item-custom2-name="Colors"
+                data-item-custom2-options="Black|White|Blue|Red|Green|Grey"
+
+                >Buy Now</button>
+                
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+       <!--Section4-->
+       <section class="text-gray-400 bg-gray-900 body-font overflow-hidden">
+        <div class="container px-5 py-24 mx-auto">
+          <div class="block relative lg:w-4/5 mx-auto flex flex-wrap"> 
+            
+            <div class="w3-content w3-display-container slider" id="div4">
+              <img class="picture slides" src="images/Tshirt3.jpg">
+              <img class="picture slides" src="images/Tshirt5.jpg">
+             
+             
+            
+              <a class="w3-button w3-display-left lilbutton" onclick="plusDivs(this, -1)">&#10094;</a>
+              <a class="w3-button w3-display-right lilbutton" onclick="plusDivs(this, 1)">&#10095;</a>
+            </div>  
+          </div>
+
+     
+              <div class="lg:w-3/5 mx-auto flex-wrap"> 
+              <h2 class="text-sm title-font text-gray-500 tracking-widest">Designer</h2>
+              <h1 class="text-white text-3xl title-font font-medium mb-1">The Catcher in the Rye</h1>
+                <div class="flex mb-4">
+             
+                
+                </div>
+              <p class="leading-relaxed"></p> <!--ADD ITEM DESCRIPTION HERE-->
+              <div class="flex mt-6 items-center pb-5 border-b-2 border-gray-800 mb-5">
+                <div class="flex">
+                  <span class="mr-3">Available in</span>
+                  
+                  <button class="border-2 border-gray-800 ml-1 bg-black rounded-full w-6 h-6 focus:outline-none"></button>
+                  <button class="border-2 border-gray-800 ml-1 bg-white rounded-full w-6 h-6 focus:outline-none"></button>
+                  <button class="border-2 border-gray-800 ml-1 rounded-full w-6 h-6 focus:outline-none" style="background-color:darkblue";></button>
+                </div>
+                <div class="flex ml-6 items-center">
+                  <div class="relative">
+                  
+                  </div>
+                </div>
+              </div>
+              <div class="flex">
+                <span class="title-font font-medium text-2xl text-white">$28</span>
+                
+                <button class= "flex ml-auto text-white bg-blue-500 border-0 py-2 px-6 focus:outline-none hover:bg-blue-600 rounded buy-button snipcart-add-item" 
+
+                data-item-id="1"
+                data-item-price="28"
+                data-item-url="/"
+                data-item-name="Hoodie"
+                data-item-image="/"
+                data-item-description="hehe"
+                data-item-custom1-name="Frame color"
+                data-item-custom1-options="S|M|L|XL"
+                data-item-custom2-name="Colors"
+                data-item-custom2-options="Black|White|Blue|Red|Green|Grey"
+
+                >Buy Now</button>
+                
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      <!--Working JS for the above for sections-->
+
+      <script>
+        var sliderObjects = [];
+        createSliderObjects();
+        
+        function plusDivs(obj, n) {
+          var parentDiv = $(obj).parent();
+          var matchedDiv;
+          $.each(sliderObjects, function(i, item) {
+            if ($(parentDiv[0]).attr('id') == $(item).attr('id')) {
+              matchedDiv = item;
+              return false;
+            }
+          });
+          matchedDiv.slideIndex=matchedDiv.slideIndex+n;
+          showDivs(matchedDiv, matchedDiv.slideIndex);
+        }
+        
+        function createSliderObjects() {
+          var sliderDivs = $('.slider');
+          $.each(sliderDivs, function(i, item) {
+            var obj = {};
+            obj.id = $(item).attr('id');
+            obj.divContent = item;
+            obj.slideIndex = 1;
+            obj.slideContents = $(item).find('.slides');
+            showDivs(obj, 1);
+            sliderObjects.push(obj);
+          });
+        }
+        
+        function showDivs(divObject, n) {
+          debugger;
+          var i;
+          if (n > divObject.slideContents.length) {
+            divObject.slideIndex = 1
+          }
+          if (n < 1) {
+            divObject.slideIndex = divObject.slideContents.length
+          }
+          for (i = 0; i < divObject.slideContents.length; i++) {
+            divObject.slideContents[i].style.display = "none";
+          }
+          divObject.slideContents[divObject.slideIndex - 1].style.display = "block";
+        }
+        </script>
+
+
+
+
+
+
+
+
+
+
+
+        
+      <div class="random">
+ 
+        <a href="Kids(pg2).html" class=" a next round">&#8250;</a>
+        </div>
+        
+
+
+    
+        <!--These are used do give extra space between the button and the next page icon-->
+        <section class="text-gray-400 bg-gray-900 body-font ">
+            <div class="container px-5 py-8 mx-auto flex items-center sm:flex-row flex-col">
+            </div>
+      </section> 
+      <section class="text-gray-400 bg-gray-900 body-font ">
+        <div class="container px-5 py-8 mx-auto flex items-center sm:flex-row flex-col">
+        </div>
+       </section>  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      <footer class="text-gray-400 bg-gray-900 body-font">
+        <div class="container px-5 py-8 mx-auto flex items-center sm:flex-row flex-col">
+          <a class="flex title-font font-medium items-center md:justify-start justify-center text-white">
+            <img src="images/sasi.jpg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-16 h-16 text-white p-2 bg-black-500 rounded-full" viewBox="0 0 24 24">
+          </svg>
+            <span class="ml-3 text-xl"></span>
+          </a>
+          <p class="text-sm text-gray-400 sm:ml-4 sm:pl-4 sm:border-l-2 sm:border-gray-800 sm:py-2 sm:mt-0 mt-4">© 2021 —
+            <a href="https://www.instagram.com/sasi_ushan/" class="text-gray-500 ml-1" target="_blank" rel="noopener noreferrer">@sasi_ushan</a>
+          </p>
+          <span class="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start">
+            <a class="text-gray-400">
+              <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
+              </svg>
+            </a>
+            <a class="ml-3 text-gray-400">
+              <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"></path>
+              </svg>
+            </a>
+            <a class="ml-3 text-gray-400">
+              <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+                <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"></path>
+              </svg>
+            </a>
+            
+          </span>
+        </div>
+      </footer>
+
+
+
+
+
+      <script async src="https://cdn.snipcart.com/themes/v3.2.0/default/snipcart.js"></script>
+      <div hidden id="snipcart" data-api-key="MjYzYWQzYWMtZjlmYS00NzE1LTg0NGUtNDgyOThiN2EzNTkyNjM3NjA4MDY5NjAxNjAwODU3"></div>
+</body>
+</html>
